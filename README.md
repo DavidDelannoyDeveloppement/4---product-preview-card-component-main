@@ -7,4 +7,4 @@ Hover :
 ![active-states](https://user-images.githubusercontent.com/101110693/176443849-811144d1-289e-4016-b586-b0c678b6ed63.jpg)
 
 Responsive design mobile :
-![desktop-design](https://user-images.githubusercontent.com/101110693/176443680-83dbda37-4bfa-4675-8a7b-20f8fc708089.jpg)
+![mobile-design](https://user-images.githubusercontent.com/101110693/176443952-7253d7c8-223f-447b-b44a-eb5bcf005186.jpg)
