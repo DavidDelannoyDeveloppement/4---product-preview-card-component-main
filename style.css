@@ -1,0 +1,233 @@
+/*Preliminary CSS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Parisienne&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --font-Parisienne :'Parisienne', cursive;
+    --font-Montserrat :'Montserrat', sans-serif;
+    --font-Fraunces :'Fraunces', serif;
+}
+
+
+
+body {
+    max-width: 100vw;
+    max-height: 100vh;
+    background-color: #F2EAE2;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*Container CSS*/
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 175px auto 50px;
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        margin: 28px auto 50px;
+    }
+}
+
+
+
+/*Left-section CSS*/
+.left-section {
+    width: 300px;
+    height: 450px;
+    background-image: url(./images/image-product-desktop.jpg);
+    border-radius: 10px 0px 0px 10px;
+    background-size: 100%;
+}
+@media only screen and (max-width: 600px) {
+    .left-section {
+    background-image: url(./images/image-product-mobile.jpg);
+    border-radius: 10px 10px 0px 0px;
+    width: 343px;
+    height: 240px;
+    }
+}
+
+
+
+/*Right-section CSS*/
+.right-section {
+    width: 300px;
+    height: 450px;
+    background-color: white;
+    border-radius: 0px 10px 10px 0px;
+
+}
+@media only screen and (max-width: 600px) {
+    .right-section {
+        width: 343px;
+        height: 371px;
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+
+
+h1 {
+    margin: 32px 32px 0;
+    font-family:var(--font-Montserrat);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #6C7289;
+}
+@media only screen and (max-width: 600px) {
+    h1 {
+        margin: 24px 24px 0;
+    }   
+}
+
+
+h2 {
+    margin: 20px 32px 0;
+    font-family: var(--font-Fraunces);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #1C232B;
+}
+@media only screen and (max-width: 600px) {
+    h2 {
+        margin: 12px 24px 0;
+    }
+}
+
+
+.right-section p {
+    margin: 24px 32px 0;
+    font-family: var(--font-Montserrat);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    color: #6C7289;
+}
+@media only screen and (max-width: 600px) {
+    .right-section p {
+        margin: 16px 24px 0;
+    }
+    
+}
+
+
+.price {
+    display: flex;
+    flex-direction: row;
+}
+
+.new-price {
+    margin: 29px 19px 0 32px;
+    font-family: var(--font-Fraunces);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: #3D8168;
+}
+@media only screen and (max-width: 600px) {
+    .new-price {
+        margin: 24px 19px 0 24.5px;
+    }
+}
+
+
+
+.old-price {
+    margin-top: 34px;
+    font-family: var(--font-Montserrat);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 23px;
+    text-decoration-line: line-through;
+    color: #6C7289;
+}
+@media only screen and (max-width: 600px) {
+    .old-price {
+        margin-top: 29px;
+    }
+}
+
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 236px;
+    height: 48px;
+    background: #3D8168;
+    border-radius: 8px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin:30px 32px 32px ;
+    border-width: 0;
+    font-family: var(--font-Montserrat);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+.button:hover {
+    background: #1A4032;
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+    .button {
+        width: 295px;
+        margin:20px 25px 24px ;
+    }
+}
+
+.button img {
+    margin-right: 11.61px;
+}
+
+
+
+/*Footer CSS*/
+.attribution { 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 14px; 
+    text-align: center;
+}
+
+.attribution c,a {
+    text-decoration: none; 
+}
+
+.ddd {
+    font-size: 16px; 
+    color: rgb(255, 120, 0);
+    font-family: 'Monotype Corsiva', var(--font-Parisienne);
+}
+
+@media only screen and (max-width: 768px) {
+
+    .ddd {
+        font-size: 12px; 
+        color: rgb(255, 120, 0);
+        font-family: var(--font-Parisienne);
+        font-weight: bold;
+    }
+}
